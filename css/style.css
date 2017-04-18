@@ -111,7 +111,7 @@ nav ul li {line-height: 56px;  }
 .nav-contacto-left{border-left: 1px solid rgba(255,255,255,0.2);}
 .nav-contacto-right{border-right: 1px solid rgba(255,255,255,0.2);}
 
-.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;background-color:rgba(0,0,0,0.6);}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;background-color:rgba(0,0,0,0.2);}
 .iconoinicio{ position: absolute; -ms-transform: translate(-50%, -70%); -webkit-transform: translate(-50%, -70%); transform: translate(-50%, -70%); border-radius: 50% 50% 0 0; padding: 10px;}
 
 .hoverableinicio, .iconoinicio{-webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; -ms-transition: 0.4s; transition: 0.4s;}
@@ -130,6 +130,9 @@ nav ul li {line-height: 56px;  }
  
 #map {width: 100%; height: 420px;}
 .card { border-radius: 8px; overflow: hidden; }
+.card-content-custom{min-height: 136px}
+.card-content-custom h5 {font-size: 1.4em;}
+.cardinicio .card-content { padding: 0px 24px; }
 
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea { background-color: white; border-bottom: 0px solid #9e9e9e; color: #222; padding-left: 15px; }
 input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) { border-bottom: 0px solid #26a69a; box-shadow: 0 0px 0 0 #26a69a; }
@@ -159,13 +162,27 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
     nav a.button-collapse{margin-top: 44px;}
 }
 @media (max-width:768px){
+    .card-content-custom{min-height: 206px}
+    .nav-contacto a { font-size: 2em; }
+    .inicio .slider-inicio.valign-wrapper{display: block}
+    .inicio .slider-inicio .slider, .inicio .slider-inicio .slider .slides {height: 184px !important;}
+    .inicio .slider-inicio * { text-align: center;}
+    .botonesbannerinicio .btn-custom, .botonesbannerinicio .btn-custom2 { padding: 26px 42px 26px;}
 }
 @media (max-width:520px){
+    h1 {font-size: 2.8em; }
+    h2 {font-size: 2.3em; }
+    h3 {font-size: 2em; }
+    h4 {font-size: 1.6em; }
+    h5 {font-size: 1.3em; }
     .gridinicio{width: 49%;}
+    .nav-contacto p { font-size: 1em; padding-left: 3px; padding-right: 3px; }
+    .nav-contacto .right, .nav-contacto .left {float: inherit !important; text-align: center; width: 100%; }
 }
 @media (max-width:420px){
 }
 @media (max-width:325px){
+    .gridinicio{width: 100%;}
 }
 
 
